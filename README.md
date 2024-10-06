@@ -32,6 +32,6 @@ This step shows how to further decrease processing time by pre-compiling the Pyt
 ## bitcoinPuzzle_v5.ipynb
 A small notebook comparing the processing time of all required algorithms:
 * SECP2556k1
-* SHA-256
+* SHA-256 with hashlib, Crypto.Hash, cryptography and a C implementation via pyopencl
 * RIPEMD-160
 * BASE-58
