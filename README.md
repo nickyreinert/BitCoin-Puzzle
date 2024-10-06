@@ -1,13 +1,13 @@
-# BitCoin-Puzzle
+# Bitcoin-Puzzle
 This repo contains a couple of Python scripts containing different approaches to solve the "Bitcoin Puzzle" (see https://nickyreinert.medium.com/the-bitcoin-puzzle-66132a735b16 and https://privatekeys.pw/puzzles/bitcoin-puzzle-tx).
 
 All scripts have a main entry point where you need to adjust solving target, e.g:
 
-  if __name__ == '__main__':
-      target_address = '1HsMJxNiV7TLxmoF6uJNkydxPFDog4NQum'
-      num_workers = 12
-      measure_performance(19, 20, target_address, num_workers)
-
+    if __name__ == '__main__':
+        target_address = '1HsMJxNiV7TLxmoF6uJNkydxPFDog4NQum'
+        num_workers = 12
+        measure_performance(19, 20, target_address, num_workers)
+  
 * target_address defines the public wallet address that you are looking for
 * num_works defines how many computing units you want to utilize
 * the first argument of measure_performance (19) deines the exponent of the lower limit of the search range (2^19)
