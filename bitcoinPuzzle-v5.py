@@ -67,7 +67,7 @@ def measure_performance(min_exp, max_exp, target_address, num_chunks, num_worker
     min_val = 2 ** min_exp
     max_val = 2 ** max_exp - 1
     n = max_val - min_val + 1  # Number of iterations (key space size)
-    chunk_size = (n // num_workers) // num_chunks  # Calculate chunk size based on number of chunks
+    chunk_size = n // num_chunks  # Calculate chunk size based on number of chunks
 
     # Start timer and capture initial CPU/memory usage
     process = psutil.Process()
